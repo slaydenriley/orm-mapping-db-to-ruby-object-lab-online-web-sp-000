@@ -16,6 +16,7 @@ class Student
 
   def self.find_by_name(name)
     "SELECT * FROM students WHERE students.name = #{name}"
+    binding.pry
   end
 
   def save
